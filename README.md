@@ -19,4 +19,16 @@ It’s important to note that when using querySelectorAll, the return value is n
 ⚫document.createElement(tagName, [options]) creates a new element of tag type tagName. [options] in this case means you can add some optional parameters to the function.<br>
 <br>
 const div = document.createElement('div'); <br>
-This function does NOT put your new element into the DOM - it simply creates it in memory. This is so that you can manipulate the element (by adding styles, classes, ids, text etc.) before placing it on the page. You can place the element into the DOM with one of the following methods.
+This function does NOT put your new element into the DOM - it simply creates it in memory. This is so that you can manipulate the element (by adding styles, classes, ids, text etc.) before placing it on the page. You can place the element into the DOM with one of the following methods.<br>
+<br>
+<b>Append elements</b><br>
+⚫parentNode.appendChild(childNode) appends childNode as the last child of parentNode<br>
+⚫parentNode.insertBefore(newNode, referenceNode) inserts newNode into parentNode before referenceNode<br>
+<br>
+<b>Remove elements</b><br>
+<br>
+⚫parentNode.removeChild(child) removes child from parentNode on the DOM and returns reference to child<br>
+<br>
+<b>Altering elements</b><br>
+<br>
+When you have a reference to an element, you can use that reference to alter the element’s own properties. This allows you to do many useful alterations, like adding/removing and altering attributes, changing classes, adding inline style information and more.<br>
