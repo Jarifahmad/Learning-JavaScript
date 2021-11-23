@@ -8,6 +8,5 @@ The DOM (or Document Object Model) is a tree-like representation of the contents
 When working with the DOM, you use “selectors” to target the nodes you want to work with. You can use a combination of CSS-style selectors and relationship properties to target the nodes you want. <br>
 <br>
 <b>DOM methods</b> <br>
-When the HTML code is parsed by a web browser, it is converted to the DOM.
-<br>
+When the HTML code is parsed by a web browser, it is converted to the DOM.<br>
 <u>Query selectors</u>
