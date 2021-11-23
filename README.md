@@ -9,4 +9,14 @@ When working with the DOM, you use “selectors” to target the nodes you want 
 <br>
 <b>DOM methods</b> <br>
 When the HTML code is parsed by a web browser, it is converted to the DOM.<br>
-<u>Query selectors</u>
+<u>Query selectors:</u> <br>
+⚫ element.querySelector(selector) returns reference to the first match of selector<br>
+⚫ element.querySelectorAll(selectors) returns a “nodelist” containing references to all of the matches of the selectors<br>
+<br>
+It’s important to note that when using querySelectorAll, the return value is not an array. It looks like an array, and it somewhat acts like an array, but it’s really a “nodelist”. The big distinction is that several array methods are missing from nodelists. <br>
+<br>
+<b>Element creation</b><br>
+⚫document.createElement(tagName, [options]) creates a new element of tag type tagName. [options] in this case means you can add some optional parameters to the function.<br>
+<br>
+const div = document.createElement('div'); <br>
+This function does NOT put your new element into the DOM - it simply creates it in memory. This is so that you can manipulate the element (by adding styles, classes, ids, text etc.) before placing it on the page. You can place the element into the DOM with one of the following methods.
